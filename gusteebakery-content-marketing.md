@@ -1,164 +1,264 @@
 # Content Marketing — @gusteebakery
 
-> **Catatan:** Akun Instagram @gusteebakery tidak bisa diakses dari lingkungan ini, jadi draft ini memakai asumsi umum: *home bakery* lokal di Indonesia, pemesanan via DM/WhatsApp, target pelanggan usia 20–40 tahun. Bagian bertanda `[...]` perlu diganti dengan data asli (nama produk, harga, area kirim, jam buka).
+> Disusun ulang dari screenshot feed Instagram @gusteebakery (19 post, per awal Oktober 2026).
+> Caption asli tidak terlihat di screenshot, jadi analisis tone diambil dari teks di desain feed.
+> Bagian bertanda `[...]` perlu diisi/dicek sebelum posting.
 
 ---
 
-## 1. Brand Voice & Tone
+## 1. Ringkasan Feed Saat Ini
 
-**Kepribadian brand:** hangat, akrab, jujur, sedikit playful — seperti teman yang jago bikin kue dan selalu nawarin "cobain deh, baru keluar oven."
+**Profil**
+- Home bakery Jakarta Barat, fresh baked daily, kirim area Jakarta, **PO H-1**
+- Order via WhatsApp (wa.me/08998111648) & DM
+
+**Produk yang sudah tampil**
+| Produk | Harga | Poin jual yang sudah dipakai |
+|---|---|---|
+| **Donat Crispy Susu** (hero product) | 14K | Crispy di luar, taburan susu bubuk, dijual sistem **Open PO per batch** (Batch 4: Rabu, 9 Sept 2026) |
+| **Chocolate Banana Bread** (menu baru, launch 14 Sept 2026) | 12K/slice | *Soft, moist, chocolatey, crunchy peanuts on top*, Real Banana, Full Butter, Freshly Baked |
+
+**Pola konten yang sudah jalan (dan bagus!)**
+1. **Teaser campaign bertahap** untuk menu baru: *New month* → *Hello September* → *New menu* → *Save the Date (14)* → *Coming Soon* → *Menu Baru* → Reels *new menu* → *Meet Our Newest Bake*
+2. **Format tanya-jawab rasa**: "Rasa Donat Crispy Susu tuh kaya gimana sih?" / "Emang beneran seenak itu ya?"
+3. **Social proof**: carousel "Apa kata teman-teman soal rasa…" dan **Love Notes** (testimoni bergaya surat)
+4. **Pengumuman PO batch** dengan tanggal jelas
+5. **Konsep bulanan**: *"We baked you something new every month"*
+
+**Peluang yang belum dipakai**
+- Reels masih sedikit (2 dari 19 post), padahal Reels paling efektif untuk menjangkau non-follower
+- Belum ada wajah/cerita owner — akun 20 followers paling cepat tumbuh lewat kedekatan personal
+- Belum ada konten "behind the oven" (proses bikin, packing, pengiriman)
+- Belum ada konten interaktif (polling, kuis, giveaway)
+- Penulisan harga belum seragam (`14K` vs `12rb/slice`) → **pakai satu format, mis. `14K` & `12K/slice`**
+
+---
+
+## 2. Brand Voice & Tone
+
+**Kepribadian:** manis, hangat, *cozy*, sedikit estetik-romantis — seperti surat kecil dari teman yang suka baking. Bukan jualan keras, tapi bikin penasaran.
+
+**Ciri khas bahasa (pertahankan!)**
+- **Headline bahasa Inggris pendek & lembut**: *Meet Our Newest Bake, Something new is baking, Stay Tuned, Love Notes, Hello September*
+- **Body copy bahasa Indonesia santai**: "tuh kaya gimana sih?", "emang beneran seenak itu ya?"
+- Menyapa audiens dengan **"teman-teman"** / **"kamu"**
+- Harga ditekankan dengan kata **"Hanya"**: *Hanya 14K*
+- Deskripsi rasa pakai 3–4 kata sensorik: *soft, moist, chocolatey, crunchy*
 
 | Lakukan ✅ | Hindari ❌ |
 |---|---|
-| Sapa audiens dengan "Kak" / "Gusteemates" | Bahasa terlalu formal ("Bapak/Ibu yang terhormat") |
-| Bahasa Indonesia santai, sesekali kata gaul ringan | Singkatan berlebihan & typo yang disengaja |
-| Ceritakan proses: adonan, oven, bahan | Klaim berlebihan ("terenak se-Indonesia") |
-| Deskripsi rasa yang bikin ngiler (lembut, *buttery*, lumer) | Hard selling di setiap post |
-| Emoji secukupnya (🍞🥐🧁✨🤎), maksimal 3–4 per caption | Spam hashtag di tengah kalimat |
-| CTA jelas & ramah ("Order via DM ya, Kak!") | CTA memaksa ("BELI SEKARANG!!!") |
+| Hook Inggris singkat + penjelasan Indonesia | Caption full bahasa Inggris panjang |
+| Bangun rasa penasaran (teaser, *stay tuned*) | Langsung hard selling tanpa cerita |
+| Bahasa ngobrol, pertanyaan retoris | Bahasa formal / terlalu "iklan" |
+| Emoji lembut: 🤎 ✨ 🍩 🍌 🍫 💌 | Emoji ramai / warna mencolok 🔥💯🚨 |
+| Selalu cantumkan tanggal PO, harga, cara order | CTA memaksa pakai huruf kapital semua |
 
-**Tagline opsi:**
-- "Gustee Bakery — Dipanggang Hangat, Sampai dengan Sayang."
-- "Fresh dari oven, langsung ke hati."
-- "Setiap gigitan, ada cerita rumah."
-
----
-
-## 2. Content Pillars
-
-| Pilar | Porsi | Tujuan | Contoh |
-|---|---|---|---|
-| 🥐 **Produk & Menu** | 35% | Jualan | Foto close-up, menu baru, varian rasa |
-| 👩‍🍳 **Behind the Oven** | 25% | Kepercayaan | Proses bikin adonan, bahan yang dipakai, packing |
-| 💬 **Testimoni & Komunitas** | 20% | Social proof | Repost review pelanggan, UGC |
-| 🎉 **Promo & Momen** | 10% | Konversi | Promo payday, hampers lebaran/natal, PO |
-| 😄 **Fun & Edukasi** | 10% | Engagement | Tips simpan roti, kuis "tim cokelat atau keju?" |
+**Signature lines (bisa dipakai berulang)**
+- *"We baked you something new every month."*
+- *"Something new is baking ✨"*
+- *"Fresh baked daily, made with love 🤎"*
+- *"Love notes from our lovely customers 💌"*
 
 ---
 
-## 3. Kalender Konten 2 Minggu
+## 3. Panduan Visual (agar feed tetap konsisten)
 
-| Hari | Minggu 1 | Minggu 2 |
+- **Warna:** krem/beige (`#F3E6CF` kira-kira), cokelat tua (`#7A3E1D`), off-white; aksen cokelat untuk coretan
+- **Font:** 3 keluarga — *serif elegan* (Gustee Bakery, Chocolate Banana Bread), *script tulisan tangan* (New month, Hello September), *display retro tebal* (DONAT CRISPY SUSU, COMING SOON)
+- **Motif:** surat & wax seal, kalender, kotak pos, bintang, coretan cokelat, foto produk dalam frame polaroid
+- **Saran:** selingi desain grafis dengan **foto/video asli** (tangan menguleni, donat ditaburi susu) supaya feed terasa lebih "hidup" dan dipercaya
+
+---
+
+## 4. Content Pillars
+
+| Pilar | Porsi | Format yang cocok untuk Gustee |
 |---|---|---|
-| Senin | Feed: Menu andalan | Feed: Carousel "Cara simpan roti biar tetap lembut" |
-| Selasa | Story: Polling rasa favorit | Story: Q&A "Tanya apa aja soal Gustee" |
-| Rabu | Reels: Proses dari adonan ke oven | Reels: ASMR potong roti / sobek roti |
-| Kamis | Feed: Testimoni pelanggan | Feed: Kenalan sama owner / tim |
-| Jumat | Reels: "Packing order hari ini" | Feed: Pengumuman PO weekend |
-| Sabtu | Story: Promo weekend | Reels: Trend audio + produk |
-| Minggu | Story: Repost UGC + terima kasih | Story: Recap minggu ini + teaser menu baru |
+| 🍩 **Menu & PO** | 30% | Open PO batch, Meet Our Newest Bake, harga |
+| ✨ **Something New Every Month** | 20% | Teaser bulanan: Hello [Bulan] → Save the Date → Coming Soon → Launch |
+| 💌 **Love Notes** | 20% | Testimoni bergaya surat, repost story pelanggan, "Apa kata teman-teman" |
+| 🥣 **Behind the Oven** *(baru)* | 20% | Reels proses, packing, cerita owner |
+| 🎲 **Ngobrol Bareng** *(baru)* | 10% | Polling, "kaya gimana sih?", tebak menu bulan depan |
 
 ---
 
-## 4. Caption Siap Pakai
+## 5. Rencana Konten Oktober 2026
 
-### Caption 1 — Produk Andalan
-> Kalau ada yang nanya, "Gustee yang paling enak apa sih?" jawabannya selalu ini 🤎
->
-> **[Nama Produk]** — lembut di dalam, *golden* di luar, dan isiannya nggak pelit. Dibikin fresh setiap hari, jadi yang sampai di tangan Kakak itu benar-benar hangat dari oven. 🍞✨
->
-> 💰 [Harga]
-> 📍 Kirim area [Area]
-> 📲 Order via DM atau WA [Nomor]
->
-> Tag teman yang wajib kamu traktir minggu ini! 👇
+Mengikuti pola September yang berhasil, dengan ide **"Tanggal 14 = Hari Menu Baru Gustee"** sebagai ritual bulanan (September launch tanggal 14 → Oktober juga 14).
 
-### Caption 2 — Behind the Oven
-> Jam [05.00] pagi, dapur Gustee udah wangi mentega 🧈
->
-> Banyak yang nanya kenapa roti kami tetap lembut sampai besok. Rahasianya sederhana: adonan diistirahatkan dengan sabar, bahan pilihan, dan nggak ada jalan pintas. Karena roti yang enak memang butuh waktu. ⏳
->
-> Swipe buat lihat prosesnya dari adonan sampai siap dikirim 👉
-
-### Caption 3 — Testimoni
-> Pesan kayak gini yang bikin kami semangat nguleni adonan tiap pagi 🥹🤎
->
-> Makasih banyak, Kak [Nama]! Senang banget [Produk]-nya jadi teman ngeteh sore bareng keluarga.
->
-> Kakak juga punya cerita sama Gustee? Tag **@gusteebakery** di story, nanti kami repost ya! ✨
-
-### Caption 4 — Promo / Pre-Order
-> 📢 **PO WEEKEND DIBUKA!** 📢
->
-> Biar akhir pekan makin manis, Gustee buka pre-order untuk:
-> 🥐 [Produk 1] — [Harga]
-> 🧁 [Produk 2] — [Harga]
-> 🍞 [Produk 3] — [Harga]
->
-> 🗓️ Order: [tanggal] – [tanggal]
-> 🚚 Kirim/ambil: [tanggal]
-> 🎁 Bonus: [promo, mis. gratis 1 cookies untuk order min. Rp150rb]
->
-> Slot terbatas karena semua dibikin fresh, jadi jangan sampai kehabisan ya, Kak! DM sekarang 💌
-
-### Caption 5 — Engagement / Fun
-> Jujur-jujuran nih, Kak… 👀
->
-> 🍫 Tim cokelat lumer
-> 🧀 Tim keju asin-manis
->
-> Jawab di kolom komentar! Rasa dengan vote terbanyak bakal jadi **menu spesial minggu depan** 🤎
-
-### Caption 6 — Edukasi
-> Beli roti kebanyakan dan takut cepat keras? Tenang, ini tips dari dapur Gustee 🍞👇
->
-> 1️⃣ Simpan di wadah kedap udara, suhu ruang — maksimal 2 hari
-> 2️⃣ Mau lebih lama? Bungkus plastik, masuk freezer (tahan s/d 2 minggu)
-> 3️⃣ Mau makan? Panaskan 5 menit di oven/air fryer 160°C — lembut lagi kayak baru!
->
-> Save post ini biar nggak lupa ya, Kak! 📌
+| Tanggal | Format | Konten |
+|---|---|---|
+| Sel, 6 Okt | Feed (script) | **Hello October** — "We baked you something new every month" |
+| Rab, 7 Okt | Feed + Story | **Open PO Donat Crispy Susu — Batch [X]** |
+| Kam, 8 Okt | Reels | Behind the oven: donat digoreng → ditaburi susu (ASMR) |
+| Jum, 9 Okt | Feed (kalender) | **Save the Date: 14 Oktober** — *Something new is baking* |
+| Sab, 10 Okt | Story | Polling: "Tebak menu baru bulan ini?" (2 pilihan clue) |
+| Sen, 12 Okt | Feed | **Coming Soon** — *Stay tuned! 14 Okt, 10:00 WIB* |
+| Sel, 13 Okt | Story | Countdown sticker + close-up blur menu baru |
+| **Rab, 14 Okt** | Reels + Feed | **Meet Our Newest Bake: [Menu Oktober]** + Open PO |
+| Jum, 16 Okt | Carousel | **Chocolate Banana Bread** — "Udah sebulan, ini kata teman-teman" (testimoni) |
+| Sab, 17 Okt | Reels | Slice banana bread — close-up crunchy peanuts & tekstur moist |
+| Sen, 19 Okt | Feed | **Love Notes vol. 2** |
+| Rab, 21 Okt | Feed + Story | **Open PO Batch [X+1]** — semua menu |
+| Jum, 23 Okt | Reels | Kenalan sama owner: "Kenapa namanya Gustee?" |
+| Sel, 27 Okt | Carousel | "Rasa [Menu Oktober] tuh kaya gimana sih?" |
+| Kam, 29 Okt | Story | Q&A + teaser: "Bulan depan bikin apa ya? 👀" |
+| Sab, 31 Okt | Feed | Recap Oktober + terima kasih |
 
 ---
 
-## 5. Script Reels (15–30 detik)
+## 6. Caption Siap Pakai
 
-### Reels A — "From Dough to Door"
+### 1 · Hello October
+> **Hello, October** 🤎
+>
+> Bulan baru, menu baru! Seperti janji kami: *we baked you something new every month* ✨
+>
+> Bulan lalu ada Chocolate Banana Bread, bulan ini… ada yang lagi kami siapkan di dapur 🤫
+> Penasaran? Pantengin terus ya, teman-teman!
+>
+> #gusteebakery #homebakeryjakartabarat
+
+### 2 · Open PO Donat Crispy Susu
+> 🍩 **OPEN PO BATCH [X]** 🍩
+> **Donat Crispy Susu — Hanya 14K**
+>
+> Crispy di luar, lembut di dalam, dan taburan susunya nggak pelit 🤍 Yang belum pernah coba, ini waktunya. Yang udah pernah… pasti ngerti kenapa kami buka batch lagi 😆
+>
+> 🗓️ PO dibuka: [hari, tanggal]
+> 🚚 Pengiriman: [hari, tanggal] (PO H-1)
+> 📍 Area Jakarta
+> 📲 Order via WhatsApp (link di bio) atau DM
+>
+> Slot per batch terbatas karena semua dibikin fresh, jadi jangan sampai kehabisan ya! 💌
+
+### 3 · Save the Date
+> **Save the date: 14 Oktober** 🗓️
+>
+> *Something new is baking* ✨
+> Clue: [clue rasa, mis. "ada hubungannya sama kopi ☕"]
+>
+> Tebak di kolom komentar! Yang tebakannya paling dekat, kami kasih kejutan kecil di order pertamamu 🤎
+> *More details coming soon.*
+
+### 4 · Coming Soon
+> **Stay tuned!** 👀
+> 14 Oktober 2026, jam 10:00 WIB.
+>
+> Menu baru Gustee sebentar lagi keluar dari oven. Nyalain notifikasi postingan kami biar nggak ketinggalan ya, teman-teman 🔔
+
+### 5 · Meet Our Newest Bake (launch)
+> **Meet our newest bake:** **[Nama Menu Oktober]** ✨
+>
+> [3–4 kata sensorik, mis. *Soft, fluffy, buttery, with a hint of…*]
+> Dibikin dengan [bahan unggulan, mis. full butter & …], fresh setiap hari 🤎
+>
+> 💰 Hanya [harga]K
+> 🗓️ Open PO mulai hari ini, kirim H-1
+> 📲 Order via WhatsApp (link di bio) / DM
+>
+> Kamu tim yang langsung order, atau tunggu review dulu? 😆
+
+### 6 · Chocolate Banana Bread
+> **Chocolate Banana Bread** 🍌🍫
+> *Soft, moist, chocolatey, with crunchy peanuts on top.*
+>
+> Dibikin pakai **pisang asli** dan **full butter**, jadi wanginya udah kecium dari pas buka box 🤎 Cocok buat teman ngopi pagi atau ngemil sore di kantor.
+>
+> 💰 Hanya 12K/slice
+> 📲 Order via WhatsApp (link di bio) / DM
+>
+> Udah sebulan menu ini ada — kamu udah coba belum? 👀
+
+### 7 · Love Notes (testimoni)
+> **Love Notes** 💌
+>
+> Ada surat kecil lagi dari teman-teman Gustee 🥹
+> Setiap pesan kayak gini bikin kami makin semangat nyalain oven tiap pagi.
+>
+> Makasih banyak udah percaya sama Gustee 🤎
+> Kamu juga punya cerita? Tag **@gusteebakery** di story, nanti kami repost ya ✨
+
+### 8 · "Kaya gimana sih?"
+> **Rasa [Menu] tuh kaya gimana sih?** 🤔
+>
+> Pertanyaan ini sering banget masuk ke DM, jadi kami jawab di sini ya 👉
+> Swipe untuk lihat tekstur, isian, dan kata teman-teman yang udah coba!
+>
+> Masih penasaran? Langsung tanya-tanya via WhatsApp aja, kami senang ngobrol 🤎
+
+---
+
+## 7. Script Reels (15–30 detik)
+
+### Reels A — "Snow on Donuts" (Donat Crispy Susu)
 | Detik | Visual | Teks di layar |
 |---|---|---|
-| 0–3 | Tangan menguleni adonan (close-up) | "Jam 5 pagi di dapur Gustee…" |
-| 3–8 | Adonan mengembang (timelapse) | "Sabar dulu, biar lembut 🤍" |
-| 8–14 | Masuk oven → keluar golden | "Dan… keluar oven! 🔥" |
-| 14–20 | Roti disobek, *steam* keluar | "Dengar suara lembutnya? 🤤" |
-| 20–25 | Packing rapi + label | "Siap meluncur ke rumah Kakak 🚚" |
-| 25–30 | Logo + CTA | "Order via DM @gusteebakery" |
+| 0–2 | Donat polos di box (close-up) | "Donat biasa?" |
+| 2–7 | Susu bubuk ditabur pelan (slow-mo) | "…nggak kalau udah begini 🤍" |
+| 7–12 | Donat dibelah, terdengar suara *crispy* | "Crispy outside, soft inside" |
+| 12–18 | Box ditutup, stiker Gustee | "Open PO Batch [X]" |
+| 18–22 | Teks penutup | "Hanya 14K · Order via link di bio" |
 
-**Audio:** lagu akustik/lo-fi yang sedang trending. **Caption:** "Dari dapur kami, ke meja makanmu 🤎 #gusteebakery"
+### Reels B — "Slice of Banana Bread"
+- **Hook (0–2 dtk):** pisau masuk ke banana bread, terdengar *crunch* kacang — teks: "Dengerin suaranya 🤭"
+- Close-up potongan: tekstur moist + chocolate chips
+- Teks bergantian: *Real Banana · Full Butter · Freshly Baked*
+- Penutup: "Chocolate Banana Bread — Hanya 12K/slice"
 
-### Reels B — "POV: Kamu buka box Gustee"
-- Hook (0–2 dtk): "POV: paket Gustee baru sampai 📦"
-- Unboxing pelan, close-up tiap produk dengan teks nama + harga
-- Penutup: gigitan pertama + teks "Worth it? Coba sendiri 😉"
+### Reels C — "Kenalan Sama Gustee"
+- Owner (boleh hanya tangan/suara) bercerita singkat: kenapa mulai baking, asal nama "Gustee", menu favorit pribadi
+- Akhiri dengan: "Menu baru setiap bulan, dibikin dari dapur kecil di Jakarta Barat 🤎"
 
 ---
 
-## 6. Template WhatsApp Broadcast
+## 8. Template WhatsApp Broadcast
 
-> Halo Kak [Nama]! 👋 Ini Gustee Bakery 🤎
+**Open PO**
+> Halo teman-teman Gustee! 🤎
 >
-> Weekend ini kami buka PO **[Produk]** — fresh dari oven, dikirim [tanggal].
-> Spesial buat pelanggan setia: **diskon [X]%** pakai kode *GUSTEEMATES* 🎁
+> **Open PO Batch [X]** udah dibuka ya ✨
+> 🍩 Donat Crispy Susu — 14K
+> 🍌 Chocolate Banana Bread — 12K/slice
+> [🆕 Menu Oktober — [harga]K]
 >
-> Balas chat ini dengan *ORDER* ya, Kak. Slot terbatas! ✨
+> 🗓️ Kirim: [hari, tanggal] (PO H-1)
+> 📍 Area Jakarta
+>
+> Balas chat ini dengan format:
+> *Nama / Pesanan / Alamat*
+> Slot terbatas, siapa cepat dia dapat 💌
+
+**Follow-up setelah order (minta testimoni)**
+> Hai [Nama]! Pesanan Gustee-nya udah sampai dengan aman? 🤎
+> Kalau berkenan, boleh share kesan-kesannya? Nanti kami jadikan *Love Notes* di Instagram ✨ Makasih banyak udah order!
 
 ---
 
-## 7. Hashtag Set
+## 9. Strategi Menambah Followers (dari 20 → 100+)
 
-- **Brand:** #gusteebakery #gusteemates #freshfromgustee
-- **Kategori:** #homebakery #rotihomemade #bakeryindonesia #kuerumahan #rotilembut
-- **Lokal:** #kuliner[kota] #bakery[kota] #jajanan[kota] *(ganti [kota])*
-- **Momen:** #hampers[tahun] #poroti #snackkantor
-
-Gunakan 8–15 hashtag per post; taruh di akhir caption atau di komentar pertama.
+1. **Reels 2× seminggu** — jangkauan ke non-follower paling besar
+2. **Minta pelanggan tag @gusteebakery** di story (selipkan kartu kecil di box: "Share momen Gustee-mu & tag kami 💌")
+3. **Mini giveaway** saat launch menu baru: follow + tag 2 teman → 3 pemenang dapat 1 box
+4. **Collab/endorse kecil** dengan akun kuliner atau kantor di Jakarta Barat (kirim sample)
+5. **Bundling** untuk naikkan nilai order, mis. *Paket Ngemil*: 3 Donat Crispy Susu + 2 slice Banana Bread = [harga]K
+6. **Highlight story**: Menu · PO · Love Notes · Cara Order — supaya pengunjung baru langsung paham
 
 ---
 
-## 8. Bio Instagram (opsi)
+## 10. Hashtag Set
 
-```
-🍞 Gustee Bakery | Home Bakery [Kota]
-✨ Fresh baked daily, made with love
-🚚 Kirim area [Area] | PO H-1
-📲 Order 👇
-[link WA / linktree]
-```
+- **Brand:** #gusteebakery #gusteelovenotes
+- **Produk:** #donatcrispysusu #donatsusu #bananabread #chocolatebananabread
+- **Lokal:** #homebakeryjakartabarat #kulinerjakartabarat #jajananjakarta #homebakeryjakarta
+- **Umum:** #homebakery #poroti #snackkantor #kuerumahan
+
+Pakai 8–12 hashtag per post, taruh di akhir caption.
+
+---
+
+## Perlu Dicek Sebelum Posting
+- [ ] Nomor batch PO terakhir (Batch 4 tanggal 9 Sept — sekarang sudah batch berapa?)
+- [ ] Nama, harga, dan bahan menu baru Oktober
+- [ ] Area kirim persisnya (bio: "Jakarta", poster menu baru menyebut area lokasi tertentu)
+- [ ] Apakah ritual "tanggal 14 = menu baru" mau dijadikan tetap
