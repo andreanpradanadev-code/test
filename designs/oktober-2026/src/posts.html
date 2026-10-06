@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>Gustee Bakery — Desain Oktober 2026</title>
+<link href="fonts.css" rel="stylesheet">
+<style>
+:root{
+  --paper:#FBF7F0; --cream:#F4E9D6; --sand:#F3E3C3; --beige:#EBD7B5;
+  --brown:#7A3E1D; --choc:#4A2412; --caramel:#B8763D; --ink:#3A1F10; --white:#FFFDF8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#777;display:flex;flex-direction:column;gap:40px;padding:40px;width:max-content}
+.post{position:relative;overflow:hidden;width:1080px;height:1440px;color:var(--brown);font-family:Montserrat,sans-serif}
+.post.story{height:1920px}
+.grain::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:60;opacity:.12;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='320' height='320'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .35  0 0 0 0 .22  0 0 0 0 .12  0 0 0 .7 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.abs{position:absolute}
+.c{left:0;right:0;text-align:center}
+.serif{font-family:"Cormorant Garamond",serif}
+.script{font-family:"Homemade Apple",cursive}
+.retro{font-family:Fraunces,serif;font-weight:900;font-variation-settings:"SOFT" 100,"opsz" 144}
+.ink{color:var(--ink)}
+.cream{color:var(--cream)}
+.brandtag{position:absolute;top:58px;left:64px;font-size:19px;letter-spacing:.32em;font-weight:700;z-index:5}
+.brandtag.c{left:0;right:0}
+.handle{position:absolute;top:58px;right:64px;font-size:19px;letter-spacing:.12em;font-weight:600;z-index:5}
+.footer{position:absolute;bottom:62px;left:0;right:0;text-align:center;font-size:19px;letter-spacing:.3em;font-weight:600;z-index:5}
+.outline{color:var(--sand);-webkit-text-stroke:6px var(--brown);paint-order:stroke fill;white-space:nowrap}
+.ph{outline:3px dashed var(--caramel);outline-offset:4px;border-radius:6px;background:rgba(184,118,61,.14)}
+.photo{position:relative;overflow:hidden}
+.php{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:40px;
+  background:repeating-linear-gradient(45deg,#EFE3CF 0 24px,#E7D7BD 24px 48px);color:var(--caramel)}
+.php-k{font-size:20px;font-weight:800;letter-spacing:.35em}
+.php-l{font-size:28px;font-weight:700;color:var(--brown);max-width:90%;line-height:1.25}
+.php-f{font-size:18px;font-weight:600;opacity:.8;font-family:monospace}
+.polaroid{background:var(--white);padding:24px 24px 0;box-shadow:0 22px 48px rgba(60,30,10,.28)}
+.pcap{height:96px;display:flex;align-items:center;justify-content:center;font-size:28px;color:var(--brown)}
+.tape{position:absolute;top:-28px;left:50%;width:210px;height:58px;margin-left:-105px;background:rgba(232,212,176,.82);transform:rotate(-4deg);box-shadow:0 2px 6px rgba(0,0,0,.08);z-index:3}
+.chip{position:absolute;padding:14px 30px;border:3px solid var(--brown);border-radius:999px;background:var(--cream);font-weight:800;font-size:26px;letter-spacing:.02em;white-space:nowrap;z-index:6;box-shadow:0 8px 18px rgba(60,30,10,.18)}
+.badge{position:absolute;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;z-index:6;box-shadow:0 14px 30px rgba(60,30,10,.3)}
+.infoline{font-size:23px;font-weight:700;letter-spacing:.14em}
+.card{background:var(--white);border-radius:28px;box-shadow:0 16px 36px rgba(60,30,10,.16)}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <filter id="crayon" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="3" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="5" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feTurbulence type="fractalNoise" baseFrequency="2.4" numOctaves="1" seed="9" result="g"/>
+      <feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.4 2.0" result="ga"/>
+      <feComposite in="d" in2="ga" operator="in"/>
+    </filter>
+    <pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="#7A3E1D" stroke-width="5"/>
+    </pattern>
+  </defs>
+</svg>
+<div id="root"></div>
+<script src="config.js"></script>
+<script>
+const C = window.CFG, P = window.PHOTOS || {};
+const M = C.menuBaru;
+const FILES = {donat:'donat', banana:'banana-bread', menu:'menu-oktober', testi1:'testi-1', testi2:'testi-2',
+  lovenote:'love-note', reelsDonat:'reels-donat', reelsBanana:'reels-banana', reelsOwner:'reels-owner'};
+
+const v = s => String(s).trim().startsWith('[') ? `<span class="ph">${s}</span>` : s;
+const px = n => typeof n === 'number' ? n + 'px' : n;
+function rng(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+
+const CAM = `<svg width="84" height="84" viewBox="0 0 24 24" fill="none" stroke="#B8763D" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8.5A2.5 2.5 0 0 1 5.5 6h1.7l1.3-2h7l1.3 2h1.7A2.5 2.5 0 0 1 21 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5z"/><circle cx="12" cy="13" r="4"/></svg>`;
+
+function photo(key, label, w, h, st = '') {
+  const src = P[FILES[key]];
+  if (src) return `<div class="photo" style="width:${px(w)};height:${px(h)};background:url('${src}') center/cover no-repeat;${st}"></div>`;
+  return `<div class="photo php" style="width:${px(w)};height:${px(h)};${st}">${CAM}<div class="php-k">FOTO</div><div class="php-l">${label}</div><div class="php-f">photos/${FILES[key]}.jpg</div></div>`;
+}
+function polaroid({x, y, w, rot = 0, key, label, cap = '', z = 2}) {
+  const ph = w - 48;
+  return `<div class="polaroid abs" style="left:${x}px;top:${y}px;width:${w}px;transform:rotate(${rot}deg);z-index:${z}">
+    <div class="tape"></div>${photo(key, label, ph, ph)}<div class="pcap script">${cap}</div></div>`;
+}
+function scribble({x, y, w, h, seed = 1, rot = 0, loops = 12, sw = 5, color = '#7A3E1D', op = .9}) {
+  const R = rng(seed), per = 28, N = loops * per, ph1 = R() * 6, ph2 = R() * 6;
+  let d = '';
+  for (let pass = 0; pass < 2; pass++) {
+    let s = '';
+    for (let i = 0; i <= N; i++) {
+      const t = i / N, th = i / per * Math.PI * 2 + pass * .5;
+      const rad = .13 + .06 * Math.sin(t * 7 + ph1);
+      const cx = w * (.12 + .76 * t), cy = h * (.5 + .26 * Math.sin(t * Math.PI * 1.6 + ph2));
+      const X = cx + rad * w * .5 * Math.cos(th) + pass * 5, Y = cy + rad * h * .95 * Math.sin(th) + pass * 3;
+      s += (i ? 'L' : 'M') + X.toFixed(1) + ' ' + Y.toFixed(1);
+    }
+    d += `<path d="${s}" fill="none" stroke="${color}" stroke-width="${pass ? sw * .6 : sw}" stroke-linecap="round" stroke-linejoin="round" opacity="${pass ? .5 : 1}"/>`;
+  }
+  return `<svg class="abs" style="left:${x}px;top:${y}px;width:${w}px;height:${h}px;transform:rotate(${rot}deg);opacity:${op};overflow:visible;z-index:1" viewBox="0 0 ${w} ${h}"><g filter="url(#crayon)">${d}</g></svg>`;
+}
+function sparkle(x, y, s, color = '#7A3E1D', rot = 0) {
+  return `<svg class="abs" style="left:${x}px;top:${y}px;width:${s}px;height:${s}px;transform:rotate(${rot}deg);z-index:7" viewBox="0 0 100 100"><path d="M50 0C54 36 64 46 100 50C64 54 54 64 50 100C46 64 36 54 0 50C36 46 46 36 50 0Z" fill="${color}"/></svg>`;
+}
+function starDoodle(x, y, s, rot = 0) {
+  let pts = [];
+  for (let i = 0; i < 10; i++) { const r = i % 2 ? 19 : 44, a = -Math.PI / 2 + i * Math.PI / 5; pts.push((50 + r * Math.cos(a)).toFixed(1) + ',' + (52 + r * Math.sin(a)).toFixed(1)); }
+  const p = pts.join(' ');
+  return `<svg class="abs" style="left:${x}px;top:${y}px;width:${s}px;height:${s}px;transform:rotate(${rot}deg);overflow:visible;z-index:2" viewBox="0 0 100 100"><g filter="url(#crayon)" fill="none" stroke="#7A3E1D" stroke-linejoin="round"><polygon points="${p}" stroke-width="3.2"/><polygon points="${p}" stroke-width="1.6" transform="translate(2.5 1.5) rotate(3 50 50)" opacity=".6"/></g></svg>`;
+}
+function heartDoodle(x, y, s, rot = 0) {
+  const d = 'M50 88C22 66 4 48 9 27C14 9 38 6 50 27C62 6 86 9 91 27C96 48 78 66 50 88Z';
+  return `<svg class="abs" style="left:${x}px;top:${y}px;width:${s}px;height:${s}px;transform:rotate(${rot}deg);overflow:visible;z-index:2" viewBox="0 0 100 100"><g filter="url(#crayon)"><path d="${d}" fill="url(#hatch)" stroke="#7A3E1D" stroke-width="3.5"/><path d="${d}" fill="none" stroke="#7A3E1D" stroke-width="1.8" transform="translate(3 2) rotate(-3 50 50)" opacity=".6"/></g></svg>`;
+}
+function marquee(text, top, size = 150, left = -60, color = 'var(--brown)') {
+  return `<div class="abs retro outline" style="top:${top}px;left:${left}px;font-size:${size}px;line-height:1;-webkit-text-stroke-color:${color}">${(text + '&nbsp;&nbsp;').repeat(3)}</div>`;
+}
+const posts = [];
+function post(id, kind, bg, inner) { posts.push(`<div class="post ${kind} grain" id="${id}" style="background:${bg}">${inner}</div>`); }
+
+/* ---------- 01 · 6 Okt · Hello October ---------- */
+function monthNote(id, line1, line2, sub, foot, seeds, size = 150) {
+  post(id, 'feed', 'var(--paper)', `
+    <div class="brandtag c">GUSTEE BAKERY</div>
+    ${scribble({x: -90, y: 90, w: 520, h: 300, seed: seeds[0], rot: -28, loops: 11})}
+    ${scribble({x: 640, y: 1050, w: 540, h: 320, seed: seeds[1], rot: -28, loops: 12})}
+    <div class="abs c script ink" style="top:${size === 150 ? 440 : 470}px;font-size:${size}px;line-height:1.45;transform:rotate(-5deg)">${line1}<br>${line2}</div>
+    <div class="abs c script" style="top:980px;font-size:34px;color:var(--caramel);transform:rotate(-4deg)">${sub}</div>
+    <div class="footer">${foot}</div>`);
+}
+monthNote('01_06-okt_feed_hello-october', 'Hello', 'October', 'a new month, a new bake', 'WE BAKED YOU SOMETHING NEW EVERY MONTH', [3, 8]);
+
+/* ---------- Open PO (feed) ---------- */
+function openPOFeed(id, b) {
+  post(id, 'feed', 'var(--sand)', `
+    <div class="abs c" style="top:112px;font-size:80px;font-weight:900;letter-spacing:.04em">OPEN PO BATCH ${v(b.nomor)}</div>
+    <div class="abs c" style="top:222px;font-size:36px;font-weight:800;letter-spacing:.14em;color:var(--caramel)">${b.tanggal}</div>
+    ${polaroid({x: 230, y: 320, w: 620, rot: -3, key: 'donat', label: 'Donat Crispy Susu ditaburi susu', cap: 'fresh dari oven'})}
+    <div class="badge" style="left:745px;top:800px;width:240px;height:240px;background:var(--brown);transform:rotate(9deg)">
+      <div class="serif" style="font-style:italic;font-size:38px;color:var(--cream);font-weight:600">Hanya</div>
+      <div class="retro" style="font-size:96px;line-height:.9;color:var(--cream)">14K</div></div>
+    ${sparkle(120, 360, 60)} ${sparkle(900, 330, 44, '#B8763D', 15)}
+    <div class="abs c retro" style="top:1080px;font-size:94px;line-height:1">Donat Crispy Susu</div>
+    <div class="abs c infoline" style="top:1210px">PO H-1 &nbsp;•&nbsp; KIRIM AREA JAKARTA &nbsp;•&nbsp; ORDER VIA WA / DM</div>
+    ${marquee('DONAT CRISPY SUSU', 1290)}`);
+}
+openPOFeed('02_07-okt_feed_open-po-batch-A', C.batchA);
+
+/* ---------- Open PO (story) ---------- */
+function openPOStory(id, b, line, sub) {
+  post(id, 'story', 'var(--sand)', `
+    <div class="abs c retro" style="top:250px;font-size:210px;line-height:1">OPEN PO</div>
+    <div class="abs c" style="top:490px;font-size:70px;font-weight:900;letter-spacing:.06em">BATCH ${v(b.nomor)}</div>
+    <div class="abs c" style="top:590px;font-size:36px;font-weight:800;letter-spacing:.14em;color:var(--caramel)">${b.tanggal}</div>
+    ${polaroid({x: 220, y: 720, w: 640, rot: -3, key: 'donat', label: 'Donat Crispy Susu ditaburi susu', cap: 'fresh dari oven'})}
+    ${sparkle(110, 760, 64)} ${sparkle(910, 1180, 50, '#B8763D', 20)}
+    <div class="abs c" style="top:1500px;font-size:40px;font-weight:800;padding:0 60px;line-height:1.3">${line}</div>
+    <div class="abs c" style="top:${1500 + (line.length > 40 ? 120 : 64)}px;font-size:28px;font-weight:600;letter-spacing:.1em;color:var(--caramel)">${sub}</div>
+    <div class="abs c script" style="top:1700px;font-size:30px">tap stiker link di bawah ini</div>`);
+}
+openPOStory('02s_07-okt_story_open-po-batch-A', C.batchA, 'Donat Crispy Susu · Hanya 14K', 'PO H-1 · KIRIM AREA JAKARTA');
+
+/* ---------- Reels cover ---------- */
+function reelsCover(id, key, label, tag, title, sub) {
+  post(id, 'story', 'var(--choc)', `
+    ${photo(key, label, 1080, 1920, 'position:absolute;inset:0;justify-content:flex-start;padding-top:420px')}
+    <div class="abs" style="left:0;right:0;bottom:0;height:1100px;background:linear-gradient(to bottom,rgba(74,36,18,0),rgba(74,36,18,.92) 55%);z-index:3"></div>
+    <div class="abs" style="left:80px;right:80px;top:1180px;z-index:5">
+      <div style="display:inline-block;padding:12px 26px;border-radius:999px;background:var(--cream);color:var(--brown);font-weight:800;font-size:24px;letter-spacing:.16em">${tag}</div>
+      <div class="retro cream" style="font-size:108px;line-height:1;margin-top:28px">${title}</div>
+      <div class="script cream" style="font-size:34px;margin-top:34px">${sub}</div>
+    </div>
+    ${sparkle(900, 1130, 60, '#F4E9D6')}`);
+}
+reelsCover('03_08-okt_reels-cover_donat', 'reelsDonat', 'Frame Reels: susu ditabur ke donat (slow-mo)', 'DONAT CRISPY SUSU · 14K', 'Crispy outside,<br>soft inside', 'donat biasa? nggak kalau udah begini');
+
+/* ---------- 04 · 9 Okt · Save the Date ---------- */
+(function () {
+  const start = (new Date(2026, 9, 1).getDay() + 6) % 7, days = ['SEN', 'SEL', 'RAB', 'KAM', 'JUM', 'SAB', 'MIN'];
+  const L = 60, T = 250, CW = 960 / 7, HR = 64, RH = 186;
+  let g = `<div class="abs" style="left:${L}px;top:${T}px;width:960px;height:${HR + 5 * RH}px;border:3px solid rgba(122,62,29,.45)"></div>`;
+  for (let i = 1; i < 7; i++) g += `<div class="abs" style="left:${L + i * CW}px;top:${T}px;width:3px;height:${HR + 5 * RH}px;background:rgba(122,62,29,.3)"></div>`;
+  for (let r = 0; r <= 5; r++) g += `<div class="abs" style="left:${L}px;top:${T + HR + r * RH}px;width:960px;height:3px;background:rgba(122,62,29,.3)"></div>`;
+  days.forEach((d, i) => g += `<div class="abs" style="left:${L + i * CW}px;top:${T + 18}px;width:${CW}px;text-align:center;font-size:22px;font-weight:800;letter-spacing:.14em">${d}</div>`);
+  for (let n = 1; n <= 31; n++) {
+    const k = start + n - 1, col = k % 7, row = Math.floor(k / 7);
+    g += `<div class="abs retro" style="left:${L + col * CW + 18}px;top:${T + HR + row * RH + 12}px;font-size:46px;font-weight:600;opacity:.85">${n}</div>`;
+  }
+  const k14 = start + 13, cx = L + (k14 % 7 + .5) * CW, cy = T + HR + (Math.floor(k14 / 7) + .5) * RH;
+  const k28 = start + 27, hx = L + (k28 % 7) * CW, hy = T + HR + Math.floor(k28 / 7) * RH;
+  post('04_09-okt_feed_save-the-date', 'feed', 'var(--paper)', `
+    <div class="abs c" style="top:140px;font-size:48px;font-weight:800;letter-spacing:.1em;transform:rotate(-2deg)">OCTOBER 2026</div>
+    ${g}
+    <div class="abs" style="left:${cx - 245}px;top:${cy - 280}px;width:490px;height:560px;background:var(--brown);transform:rotate(-6deg);box-shadow:0 26px 50px rgba(60,30,10,.35);z-index:8;padding:44px 40px;color:var(--cream)">
+      <div class="retro" style="position:absolute;right:38px;top:26px;font-size:76px">14</div>
+      <div style="font-size:74px;font-weight:900;line-height:.98;margin-top:20px">SAVE<br>THE<br>DATE</div>
+      <div style="margin-top:34px;border:3px solid var(--cream);border-radius:50%;padding:24px 10px;transform:rotate(-7deg);text-align:center"><span class="script" style="font-size:27px">Something new is baking</span></div>
+      <div style="position:absolute;left:40px;bottom:36px;font-size:22px;font-weight:700;line-height:1.3">More details<br>coming soon.</div>
+      <div style="position:absolute;right:36px;bottom:36px;font-size:18px;font-weight:600">@gusteebakery</div>
+    </div>
+    ${sparkle(cx + 190, cy - 330, 54, '#B8763D', 10)}
+    ${starDoodle(30, 30, 150, -12)} ${starDoodle(150, 110, 90, 14)} ${starDoodle(900, 40, 130, 18)}
+    ${heartDoodle(hx + 14, hy + 34, 120, -8)}
+    <div class="footer" style="bottom:56px">WE BAKED YOU SOMETHING NEW EVERY MONTH</div>`);
+})();
+
+/* ---------- 05 · 10 Okt · Story polling ---------- */
+post('05_10-okt_story_polling', 'story', 'var(--brown)', `
+  <div class="abs c script cream" style="top:300px;font-size:54px;transform:rotate(-4deg)">psst...</div>
+  <div class="abs c retro cream" style="top:430px;font-size:118px;line-height:1.02;padding:0 70px">Tebak menu baru bulan ini?</div>
+  <div class="abs" style="left:170px;width:740px;top:880px;background:var(--cream);padding:38px 44px;transform:rotate(-2deg);box-shadow:0 20px 40px rgba(0,0,0,.25)">
+    <div class="tape"></div>
+    <div style="font-size:24px;font-weight:800;letter-spacing:.3em;color:var(--caramel)">CLUE</div>
+    <div class="serif" style="font-size:52px;font-weight:600;line-height:1.15;margin-top:10px">${v(M.clue)}</div>
+  </div>
+  ${sparkle(110, 300, 64, '#F4E9D6')} ${sparkle(900, 820, 46, '#F4E9D6', 20)}
+  <div class="abs c" style="top:1660px;font-size:28px;font-weight:700;letter-spacing:.12em;color:var(--cream)">JAWABANNYA 14 OKTOBER · 10:00 WIB</div>`);
+
+/* ---------- 06 · 12 Okt · Coming Soon ---------- */
+(function () {
+  let L = '';
+  const cx = 540, cy = 730, rx = 410, ry = 540, put = (ch, a, rot) => {
+    const r = a * Math.PI / 180, x = cx + rx * Math.cos(r), y = cy + ry * Math.sin(r);
+    L += `<div class="abs retro" style="left:${x - 90}px;top:${y - 120}px;width:180px;text-align:center;font-size:220px;line-height:1;transform:rotate(${rot}deg)">${ch}</div>`;
+  };
+  'COMING'.split('').forEach((ch, i) => { const a = 205 + i * 26; put(ch, a, (a - 270) * .6); });
+  'SOON'.split('').forEach((ch, i) => { const a = 140 - i * 33.3; put(ch, a, (a - 90) * .6); });
+  post('06_12-okt_feed_coming-soon', 'feed', '#ECE5DA', `
+    <div class="brandtag">GUSTEE BAKERY</div><div class="handle">@gusteebakery</div>
+    ${L}
+    <div class="abs" style="left:300px;top:540px;width:480px;height:380px;background:var(--white);transform:rotate(4deg);box-shadow:0 18px 40px rgba(60,30,10,.22);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;z-index:5">
+      <div class="tape"></div>
+      <div class="script ink" style="font-size:46px">Stay tuned!</div>
+      <div class="script ink" style="font-size:34px;line-height:1.7;text-align:center">14 Okt, 2026<br>at 10:00 WIB</div>
+    </div>
+    ${sparkle(250, 470, 48)} ${sparkle(780, 900, 60, '#B8763D', 15)} ${sparkle(800, 500, 34)}`);
+})();
+
+/* ---------- 07 · 13 Okt · Story countdown ---------- */
+post('07_13-okt_story_countdown', 'story', 'var(--paper)', `
+  ${scribble({x: -80, y: 180, w: 520, h: 300, seed: 5, rot: -25})}
+  ${scribble({x: 640, y: 1600, w: 540, h: 300, seed: 11, rot: -25})}
+  <div class="abs c script ink" style="top:360px;font-size:80px;transform:rotate(-4deg)">Besok,</div>
+  <div class="abs c" style="top:520px;font-size:82px;font-weight:900;letter-spacing:.02em">JAM 10:00 WIB</div>
+  <div class="abs c script" style="top:660px;font-size:36px;color:var(--caramel)">something new is baking</div>
+  <div class="abs" style="left:290px;top:790px;width:500px;height:500px;border-radius:40px;background:var(--brown);display:flex;align-items:center;justify-content:center;transform:rotate(-4deg);box-shadow:0 24px 50px rgba(60,30,10,.3)">
+    <div class="retro cream" style="font-size:330px;line-height:1">?</div></div>
+  ${sparkle(230, 760, 60)} ${sparkle(800, 1240, 48, '#B8763D', 20)}
+  <div class="abs c" style="top:1380px;font-size:26px;font-weight:700;letter-spacing:.2em">NYALAKAN PENGINGAT DI BAWAH</div>`);
+
+/* ---------- 08 · 14 Okt · Meet Our Newest Bake ---------- */
+post('08_14-okt_feed_meet-our-newest-bake', 'feed', 'var(--brown)', `
+  ${photo('menu', 'Foto menu baru Oktober (close-up)', 1080, 980, 'position:absolute;left:0;top:0;padding-bottom:160px')}
+  <svg class="abs" style="left:0;top:830px;z-index:3" width="1080" height="610" viewBox="0 0 1080 610"><path d="M0 70 C260 0 520 0 760 60 C900 95 1000 110 1080 90 L1080 610 L0 610Z" fill="#7A3E1D"/></svg>
+  <div class="badge" style="right:70px;top:720px;width:300px;height:300px;background:var(--cream);border:6px double var(--brown);transform:rotate(-8deg)">
+    <div class="serif" style="font-size:50px;font-weight:600;font-style:italic;line-height:1.02;color:var(--brown)">Meet Our<br>Newest<br>Bake</div></div>
+  <div class="abs" style="left:76px;top:960px;width:650px;z-index:5;display:flex;flex-direction:column;gap:22px;color:var(--cream)">
+    <div class="serif" style="font-size:86px;font-weight:700;line-height:1">${v(M.nama)}</div>
+    <div style="font-size:30px;font-weight:500;line-height:1.4;opacity:.9">${v(M.deskripsi)}</div>
+    <div style="font-size:38px;font-weight:800;margin-top:8px">Hanya ${v(M.harga)} <span style="font-size:24px;font-weight:600;letter-spacing:.1em;opacity:.8">&nbsp;· OPEN PO · PO H-1</span></div>
+  </div>
+  ${sparkle(900, 1180, 70, '#F4E9D6', 10)} ${sparkle(980, 1300, 36, '#F4E9D6')} ${sparkle(60, 790, 50, '#F4E9D6')}`);
+
+/* ---------- 09 · 16 Okt · Carousel Banana Bread ---------- */
+post('09a_16-okt_carousel-1_banana-bread', 'feed', 'var(--sand)', `
+  <div class="brandtag">GUSTEE BAKERY</div><div class="handle">1 / 3</div>
+  <div class="abs c" style="top:150px;font-size:32px;font-weight:600;color:var(--caramel)">Udah sebulan nemenin teman-teman,</div>
+  <div class="abs c retro" style="top:215px;font-size:104px;line-height:.98">Chocolate<br>Banana Bread</div>
+  <div class="abs c script" style="top:450px;font-size:38px;transform:rotate(-3deg)">ini kata mereka...</div>
+  ${polaroid({x: 260, y: 580, w: 560, rot: 4, key: 'banana', label: 'Chocolate Banana Bread (potongan close-up)', cap: 'baru keluar oven'})}
+  <div class="chip" style="left:120px;top:660px;transform:rotate(-9deg)">Real Banana</div>
+  <div class="chip" style="right:90px;top:620px;transform:rotate(7deg)">Freshly Baked</div>
+  <div class="chip" style="right:110px;top:1000px;transform:rotate(8deg)">Full Butter</div>
+  <div class="badge" style="left:110px;top:1000px;width:220px;height:220px;background:var(--brown);transform:rotate(-8deg)">
+    <div class="retro cream" style="font-size:86px;line-height:.9">12K</div><div style="font-size:24px;font-weight:700;color:var(--cream);letter-spacing:.1em">/SLICE</div></div>
+  <div class="abs" style="right:70px;bottom:62px;font-size:26px;font-weight:800;letter-spacing:.2em">GESER &nbsp;→</div>`);
+
+post('09b_16-okt_carousel-2_testimoni', 'feed', 'var(--cream)', `
+  <div class="brandtag">GUSTEE BAKERY</div><div class="handle">2 / 3</div>
+  <div class="abs c" style="top:150px;font-size:32px;font-weight:600;color:var(--caramel)">Apa kata teman-teman soal</div>
+  <div class="abs c retro" style="top:210px;font-size:84px;line-height:1">Chocolate Banana Bread?</div>
+  <div class="abs" style="left:80px;top:420px;transform:rotate(-3deg);z-index:2">
+    <div class="card" style="padding:18px">${photo('testi1', 'Screenshot testimoni #1', 400, 760, 'border-radius:18px')}</div></div>
+  <div class="abs" style="left:580px;top:460px;transform:rotate(3deg);z-index:2">
+    <div class="card" style="padding:18px">${photo('testi2', 'Screenshot testimoni #2', 400, 760, 'border-radius:18px')}</div></div>
+  ${heartDoodle(470, 1250, 120, -10)} ${sparkle(950, 380, 50)}
+  <div class="abs" style="right:70px;bottom:62px;font-size:26px;font-weight:800;letter-spacing:.2em">GESER &nbsp;→</div>`);
+
+function ctaSlide(id, num, produk, harga) {
+  post(id, 'feed', 'var(--brown)', `
+    <div class="brandtag cream">GUSTEE BAKERY</div><div class="handle cream">${num}</div>
+    <div class="abs c script cream" style="top:300px;font-size:44px;transform:rotate(-4deg)">jadi...</div>
+    <div class="abs c retro cream" style="top:420px;font-size:124px;line-height:1">Kamu udah<br>coba belum?</div>
+    ${sparkle(510, 720, 60, '#F4E9D6')}
+    <div class="abs card" style="left:130px;width:820px;top:840px;padding:50px 56px;background:var(--cream);color:var(--brown)">
+      <div class="serif" style="font-size:54px;font-weight:700;line-height:1.05">${produk}</div>
+      <div style="font-size:36px;font-weight:800;margin-top:12px">Hanya ${harga}</div>
+      <div style="height:3px;background:rgba(122,62,29,.25);margin:30px 0"></div>
+      <div style="font-size:26px;font-weight:700;letter-spacing:.08em;line-height:1.7">PO H-1 · KIRIM AREA JAKARTA<br>ORDER VIA WHATSAPP: ${C.wa}<br>ATAU DM ${C.handle}</div>
+    </div>`);
+}
+ctaSlide('09c_16-okt_carousel-3_cta', '3 / 3', 'Chocolate Banana Bread', '12K/slice');
+
+reelsCover('10_17-okt_reels-cover_banana-bread', 'reelsBanana', 'Frame Reels: pisau memotong banana bread', 'CHOCOLATE BANANA BREAD', 'Dengerin<br>suaranya...', 'crunchy peanuts on top');
+
+/* ---------- 11 · 19 Okt · Love Notes ---------- */
+post('11_19-okt_feed_love-notes', 'feed', 'var(--brown)', `
+  <div class="abs c serif cream" style="top:40px;font-size:250px;font-weight:600;line-height:1;letter-spacing:.03em">LOVE</div>
+  <div class="abs script cream" style="left:800px;top:250px;font-size:44px;transform:rotate(-10deg);z-index:9">vol. 2</div>
+  <div class="abs" style="left:170px;top:520px;width:740px;height:600px;background:var(--white);transform:rotate(-2deg);box-shadow:0 22px 50px rgba(0,0,0,.3);padding:120px 50px 40px;z-index:3">
+    <div style="display:flex;justify-content:space-between;font-size:18px;font-weight:700;letter-spacing:.2em;color:var(--caramel)"><span>KEPADA: GUSTEE BAKERY</span><span>LOVE NOTES</span></div>
+    ${photo('lovenote', 'Screenshot / tulisan testimoni pelanggan', 640, 330, 'margin-top:20px;border-radius:12px')}
+    <div class="script" style="text-align:right;font-size:28px;margin-top:14px;color:var(--brown)">— ${v('[nama pelanggan]')}</div>
+  </div>
+  <svg class="abs" style="left:290px;top:300px;transform:rotate(3deg);z-index:5;filter:drop-shadow(0 16px 26px rgba(0,0,0,.3))" width="500" height="320" viewBox="0 0 500 320">
+    <rect x="1" y="1" width="498" height="318" fill="#F8F1E5" stroke="#E0D0B8" stroke-width="2"/>
+    <path d="M1 318 L215 160 M499 318 L285 160" stroke="#E2D3BC" stroke-width="2" fill="none"/>
+    <path d="M1 1 L250 180 L499 1" fill="#F2E8D8" stroke="#D9C7AC" stroke-width="2"/>
+    <circle cx="250" cy="180" r="48" fill="#6E2B17"/><circle cx="250" cy="180" r="34" fill="none" stroke="#8E3D22" stroke-width="4"/>
+    <text x="250" y="196" text-anchor="middle" font-family="Cormorant Garamond" font-weight="700" font-size="44" fill="#A85A36">G</text>
+  </svg>
+  <div class="abs c serif cream" style="top:1150px;font-size:250px;font-weight:600;line-height:1;letter-spacing:.03em">NOTES</div>
+  ${sparkle(110, 420, 50, '#F4E9D6')} ${sparkle(920, 1080, 40, '#F4E9D6', 20)}`);
+
+/* ---------- 12 · 21 Okt · Open PO semua menu ---------- */
+(function () {
+  const row = (nama, harga, desc, isNew) => `
+    <div style="display:flex;align-items:baseline;gap:16px;margin-top:34px">
+      <div class="serif" style="font-size:52px;font-weight:700;white-space:nowrap">${nama}${isNew ? ' <span style="font-family:Montserrat;font-size:20px;font-weight:800;letter-spacing:.14em;background:var(--brown);color:var(--cream);padding:6px 14px;border-radius:999px;vertical-align:middle">NEW</span>' : ''}</div>
+      <div style="flex:1;border-bottom:4px dotted rgba(122,62,29,.45);transform:translateY(-10px)"></div>
+      <div style="font-size:38px;font-weight:800;white-space:nowrap">${harga}</div></div>
+    <div class="serif" style="font-size:28px;font-style:italic;opacity:.8">${desc}</div>`;
+  post('12_21-okt_feed_open-po-batch-B', 'feed', 'var(--sand)', `
+    <div class="abs c" style="top:112px;font-size:80px;font-weight:900;letter-spacing:.04em">OPEN PO BATCH ${v(C.batchB.nomor)}</div>
+    <div class="abs c" style="top:222px;font-size:36px;font-weight:800;letter-spacing:.14em;color:var(--caramel)">${C.batchB.tanggal}</div>
+    <div class="abs" style="left:100px;top:340px;width:880px;height:650px;background:var(--white);transform:rotate(-1.5deg);box-shadow:0 22px 48px rgba(60,30,10,.22);padding:56px 64px">
+      <div class="tape"></div>
+      <div class="serif" style="text-align:center;font-size:78px;font-style:italic;font-weight:600;line-height:1">Menu</div>
+      <div style="text-align:center;font-size:18px;font-weight:700;letter-spacing:.4em;color:var(--caramel);margin-top:10px">GUSTEE BAKERY</div>
+      ${row('Donat Crispy Susu', '14K', 'crispy di luar, lembut di dalam, taburan susu', false)}
+      ${row('Chocolate Banana Bread', '12K', 'per slice · real banana, full butter, crunchy peanuts', false)}
+      ${row(v(M.nama), v(M.harga), 'menu baru Oktober', true)}
+    </div>
+    ${sparkle(920, 300, 60)} ${sparkle(70, 1000, 44, '#B8763D', 15)}
+    <div class="abs c infoline" style="top:1070px">PO H-1 &nbsp;•&nbsp; KIRIM AREA JAKARTA &nbsp;•&nbsp; ORDER VIA WA / DM</div>
+    ${marquee('OPEN PO', 1180, 190)}`);
+})();
+openPOStory('12s_21-okt_story_open-po-batch-B', C.batchB, `Donat Crispy Susu · Banana Bread · ${v(M.nama)}`, 'PO H-1 · KIRIM AREA JAKARTA');
+
+reelsCover('13_23-okt_reels-cover_kenalan', 'reelsOwner', 'Frame Reels: owner / tangan menguleni adonan', 'BEHIND THE OVEN', 'Kenalan sama<br>Gustee', 'kenapa namanya gustee?');
+
+/* ---------- 14 · 27 Okt · Carousel "kaya gimana sih?" ---------- */
+post('14a_27-okt_carousel-1_kaya-gimana', 'feed', '#F5E6C8', `
+  <div class="brandtag">GUSTEE BAKERY</div><div class="handle">1 / 3</div>
+  ${sparkle(940, 130, 40)} ${sparkle(990, 200, 22, '#B8763D')}
+  <div class="abs" style="left:80px;right:80px;top:190px">
+    <div style="font-size:34px;font-weight:600">Rasa</div>
+    <div style="font-size:84px;font-weight:900;line-height:1.02;text-transform:uppercase;margin-top:6px">${v(M.nama)}</div>
+    <div style="font-size:48px;font-weight:700;color:var(--caramel);margin-top:12px">tuh kaya gimana sih?</div>
+    <div style="font-size:28px;font-weight:500;line-height:1.5;margin-top:26px;max-width:820px">Pertanyaan ini sering banget masuk ke DM, jadi kami jawab di sini ya. Geser untuk lihat tekstur, rasa, dan cara paling enak menikmatinya!</div>
+  </div>
+  ${photo('menu', 'Foto menu baru Oktober (dibelah, kelihatan isinya)', 920, 560, 'position:absolute;left:80px;top:760px;border-radius:36px')}
+  <div class="abs" style="right:70px;bottom:50px;font-size:26px;font-weight:800;letter-spacing:.2em;z-index:5">GESER &nbsp;→</div>`);
+
+post('14b_27-okt_carousel-2_detail', 'feed', '#F5E6C8', `
+  <div class="brandtag">GUSTEE BAKERY</div><div class="handle">2 / 3</div>
+  <div class="abs c retro" style="top:150px;font-size:86px;line-height:1">Jadi, rasanya tuh...</div>
+  <div class="abs" style="left:80px;right:80px;top:330px;display:flex;flex-direction:column;gap:36px">
+    ${[['01', 'Teksturnya', M.tekstur], ['02', 'Rasanya', M.rasa], ['03', 'Paling enak dimakan', M.enakDimakan]].map(([n, t, d]) => `
+      <div class="card" style="display:flex;gap:40px;align-items:center;padding:44px 50px;min-height:250px">
+        <div class="retro" style="font-size:110px;color:var(--caramel);line-height:1">${n}</div>
+        <div><div style="font-size:38px;font-weight:800">${t}</div><div style="font-size:32px;font-weight:500;margin-top:12px;line-height:1.35">${v(d)}</div></div>
+      </div>`).join('')}
+  </div>
+  <div class="abs c script" style="bottom:120px;font-size:32px">masih penasaran? tanya-tanya via WhatsApp aja</div>
+  <div class="abs" style="right:70px;bottom:50px;font-size:26px;font-weight:800;letter-spacing:.2em">GESER &nbsp;→</div>`);
+
+ctaSlide('14c_27-okt_carousel-3_cta', '3 / 3', v(M.nama), v(M.harga));
+
+/* ---------- 15 · 29 Okt · Story Q&A ---------- */
+post('15_29-okt_story_qna', 'story', 'var(--sand)', `
+  ${starDoodle(60, 220, 150, -12)} ${starDoodle(860, 1560, 140, 16)}
+  <div class="abs c script" style="top:340px;font-size:48px;transform:rotate(-4deg)">bulan depan</div>
+  <div class="abs c retro" style="top:450px;font-size:130px;line-height:1">bikin apa ya?</div>
+  <div class="abs c" style="top:640px;font-size:32px;font-weight:600;line-height:1.5;padding:0 120px">Kasih ide menu impianmu di bawah. Siapa tahu jadi menu Gustee bulan depan!</div>
+  ${sparkle(170, 640, 50)} ${sparkle(880, 420, 60, '#B8763D', 20)}
+  <div class="abs c" style="top:1500px;font-size:24px;font-weight:700;letter-spacing:.24em">WE BAKED YOU SOMETHING NEW EVERY MONTH</div>`);
+
+/* ---------- 16 · 31 Okt · Thank you October ---------- */
+monthNote('16_31-okt_feed_thank-you-october', 'Thank you,', 'October', 'makasih udah nemenin gustee bulan ini', 'SEE YOU IN NOVEMBER · SOMETHING NEW IS BAKING', [12, 21], 122);
+
+document.getElementById('root').innerHTML = posts.join('');
+(async () => {
+  await document.fonts.ready;
+  await Promise.all(['900 40px Fraunces', '600 40px Fraunces', '40px "Homemade Apple"', '600 40px "Cormorant Garamond"', '700 40px "Cormorant Garamond"',
+    'italic 600 40px "Cormorant Garamond"', '500 20px Montserrat', '700 20px Montserrat', '800 20px Montserrat', '900 20px Montserrat'].map(f => document.fonts.load(f)));
+  await Promise.all([...document.images].map(i => i.complete ? 0 : new Promise(r => { i.onload = i.onerror = r; })));
+  window.__ready = true;
+})();
+</script>
+</body>
+</html>
