@@ -1,0 +1,8 @@
+1. 02s_07-okt_story_open-po-batch-A
+2. 03_08-okt_reels-cover_donat
+3. 05_10-okt_story_polling
+4. 07_13-okt_story_countdown
+5. 10_17-okt_reels-cover_banana-bread
+6. 12s_21-okt_story_open-po-batch-B
+7. 13_23-okt_reels-cover_kenalan
+8. 15_29-okt_story_qna

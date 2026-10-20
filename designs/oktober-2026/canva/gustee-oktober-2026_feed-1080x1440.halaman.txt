@@ -1,0 +1,14 @@
+1. 01_06-okt_feed_hello-october
+2. 02_07-okt_feed_open-po-batch-A
+3. 04_09-okt_feed_save-the-date
+4. 06_12-okt_feed_coming-soon
+5. 08_14-okt_feed_meet-our-newest-bake
+6. 09a_16-okt_carousel-1_banana-bread
+7. 09b_16-okt_carousel-2_testimoni
+8. 09c_16-okt_carousel-3_cta
+9. 11_19-okt_feed_love-notes
+10. 12_21-okt_feed_open-po-batch-B
+11. 14a_27-okt_carousel-1_kaya-gimana
+12. 14b_27-okt_carousel-2_detail
+13. 14c_27-okt_carousel-3_cta
+14. 16_31-okt_feed_thank-you-october

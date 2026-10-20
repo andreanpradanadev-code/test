@@ -1,0 +1,23 @@
+CARA IMPOR DESAIN GUSTEE BAKERY KE CANVA (BISA DIEDIT)
+
+Isi folder:
+- gustee-oktober-2026_feed-1080x1440.pdf          14 halaman: post feed + carousel
+- gustee-oktober-2026_story-reels-1080x1920.pdf   8 halaman: story + cover Reels
+- *.halaman.txt   urutan halaman = nama desain + tanggal posting
+- fonts/          font yang dipakai (Google Fonts, lisensi OFL)
+
+Langkah:
+1. (Disarankan) Pasang font dulu agar teks tidak diganti font lain:
+   Canva > Brand (Brand Kit) > Fonts > Upload font, lalu unggah semua file di folder fonts/.
+   Upload font butuh Canva Pro/Teams. Tanpa Pro, Canva akan memakai font yang mirip.
+2. Di Canva klik Create a design > Import file (atau seret PDF ke beranda Canva).
+3. Pilih salah satu PDF. Canva membuat 1 desain dengan 1 halaman per post.
+4. Semua teks bisa diklik dan diedit. Ganti teks bergaris putus-putus
+   ([Nama Menu Oktober], [harga]K, BATCH [X], dst.) dengan data asli.
+5. Kotak bergaris bertuliskan "FOTO" adalah tempat foto: seret foto produk ke atasnya,
+   atau hapus kotaknya lalu taruh foto.
+6. Unduh per halaman: Share > Download > PNG > pilih halaman.
+
+Catatan:
+- Coretan krayon, bintang doodle dan teks outline masuk sebagai gambar/vektor; bisa dipindah, diubah ukuran, atau dihapus.
+- Tekstur kertas halus di versi PNG sengaja tidak ikut di PDF supaya teks tidak tertutup lapisan gambar.
